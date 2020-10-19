@@ -19,9 +19,10 @@ export default function NavigationMenu( props ) {
 		children,
 		className,
 		menu = ROOT_MENU,
+		onBackButtonClick,
 		parentMenu,
 		title,
-		onBackButtonClick,
+		titleAction,
 	} = props;
 	useNavigationTreeMenu( props );
 	const { activeMenu } = useNavigationContext();
@@ -59,7 +60,13 @@ export default function NavigationMenu( props ) {
 						className="components-navigation__menu-title"
 						variant="subtitle"
 					>
-						{ title }
+						{ ! titleAction && title }
+						{ titleAction && (
+							<span className="components-navigation__menu-title-action">
+								{ title }
+								{ titleAction }
+							</span>
+						) }
 					</MenuTitleUI>
 				) }
 				<ul>{ children }</ul>

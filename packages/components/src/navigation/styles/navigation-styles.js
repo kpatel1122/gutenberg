@@ -54,6 +54,12 @@ export const MenuTitleUI = styled( Text )`
 	padding: 4px 0 4px 16px;
 	margin-bottom: 8px;
 	color: ${ G2.gray[ 100 ] };
+
+	.components-navigation__menu-title-action {
+		display: inline-flex;
+		justify-content: space-between;
+		width: 100%;
+	}
 `;
 
 export const GroupTitleUI = styled( Text )`
