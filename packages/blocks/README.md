@@ -747,7 +747,6 @@ _Parameters_
 
 -   _blocks_ `(Array|Object)`: Blocks array or block object.
 -   _name_ `string`: Block name.
--   _isGroupingBlock_ `boolean`: Set to true to bypass default grouping block selection.
 
 _Returns_
 
