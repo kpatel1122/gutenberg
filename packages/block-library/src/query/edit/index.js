@@ -65,10 +65,7 @@ export default function QueryEdit( {
 			</BlockControls>
 			<div { ...blockProps }>
 				<QueryProvider>
-					<InnerBlocks
-						template={ TEMPLATE }
-						templateInsertUpdatesSelection={ false }
-					/>
+					<InnerBlocks template={ TEMPLATE } />
 				</QueryProvider>
 			</div>
 		</>
